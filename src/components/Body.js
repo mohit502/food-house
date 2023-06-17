@@ -14,7 +14,7 @@ const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
-  const {user, setUser} = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
 
   useEffect(() => {
     getRestaurants();
@@ -54,9 +54,14 @@ const Body = () => {
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
+          onKeyUp={() => {
+            const data = filterData(searchText, allRestaurants);
+
+            setFilteredRestaurants(data);
+          }}
         />
         <button
-          data-testid = "search-btn"
+          data-testid="search-btn"
           className="bg-rose-400 px-4 mx-5 rounded-md hover:bg-red-900"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
@@ -68,12 +73,6 @@ const Body = () => {
         >
           Search
         </button>
-        <input value={user.name} onChange={
-          e => setUser({
-            name: e.target.value,
-            email: "newemail@gmail.com"
-          })
-        }></input>
       </div>
       <div className="flex flex-wrap justify-center-center">
         {filteredRestaurants.map((restaurant) => {

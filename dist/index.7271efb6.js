@@ -31737,6 +31737,10 @@ const Body = ()=>{
                         className: "outline-none h-18 rounded-md",
                         onChange: (e)=>{
                             setSearchText(e.target.value);
+                        },
+                        onKeyUp: ()=>{
+                            const data = (0, _helper.filterData)(searchText, allRestaurants);
+                            setFilteredRestaurants(data);
                         }
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
@@ -31748,13 +31752,6 @@ const Body = ()=>{
                         //filter()
                         },
                         children: "Search"
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
-                        value: user.name,
-                        onChange: (e)=>setUser({
-                                name: e.target.value,
-                                email: "newemail@gmail.com"
-                            })
                     })
                 ]
             }),
