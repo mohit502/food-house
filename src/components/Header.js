@@ -31,29 +31,29 @@ const Header = () => {
       <div>
         <ul className="font-nunito  flex mt-12 ">
           <Link to="/">
-            <li className="px-4 hover:bg-red-200" key="l1">
+            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               Home
             </li>
           </Link>
 
           <Link to="/about">
-            <li className="px-4 hover:bg-red-200" key="l1">
+            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               About
             </li>
           </Link>
           <Link to="/contact">
-            <li className="px-4 hover:bg-red-200" key="l1">
+            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               Contact
             </li>
           </Link>
           <Link to="/instamart">
-            <li className="px-4 hover:bg-red-200" key="l1">
+            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               Instamart
             </li>
           </Link>
 
           <Link to="/cart">
-            <li data-testid="cart" className="px-4 hover:bg-red-200" key="l1">
+            <li data-testid="cart" className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               Cart - {cartItems.length}
             </li>
           </Link>

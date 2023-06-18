@@ -247,6 +247,11 @@ img, video {
   margin: 1.5rem;
 }
 
+.mx-24 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -264,6 +269,10 @@ img, video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -276,40 +285,20 @@ img, video {
   width: 14rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-2 {
-  width: .5rem;
-}
-
-.w-2\.5 {
-  width: .625rem;
-}
-
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[3\%\] {
-  width: 3%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[\%\] {
-  width: % ;
-}
-
-.w-\[2\%\] {
-  width: 2%;
-}
-
 .w-\[25\%\] {
   width: 25%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -322,6 +311,14 @@ img, video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: .375rem;
 }
 
 .rounded-l-md {
@@ -411,10 +408,6 @@ img, video {
   font-family: Nunito;
 }
 
-.font-roboto {
-  font-family: Roboto;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -438,6 +431,11 @@ img, video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -474,6 +472,26 @@ img, video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.duration-200 {
+  transition-duration: .2s;
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
 .hover\:bg-red-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
@@ -487,6 +505,30 @@ img, video {
 .hover\:bg-rose-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 205 211 / var(--tw-bg-opacity));
+}
+
+.hover\:shadow-md:hover {
+  --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

@@ -31713,12 +31713,13 @@ const Body = ()=>{
     }, []);
     console.log("render");
     async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.043921&lng=72.6716589&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6105073&lng=77.1145653&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
         //optional chaining
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        console.log(json);
     }
     const online = (0, _useOnline.default)();
     if (!online) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
@@ -31728,13 +31729,13 @@ const Body = ()=>{
     return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16",
+                className: "flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16\r ",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
                         type: "text",
                         value: searchText,
                         placeholder: "Search here",
-                        className: " outline-none rounded-l-md h-12 text-base  pl-2 w-[25%]",
+                        className: " outline-none rounded-l-md h-12 text-base  pl-2 w-[25%]\r ",
                         onChange: (e)=>{
                             setSearchText(e.target.value);
                         },
@@ -31745,7 +31746,7 @@ const Body = ()=>{
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                         "data-testid": "search-btn",
-                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200",
+                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200\r hover:scale-105 transition-all duration-200 cursor-pointer\r ",
                         onClick: ()=>{
                             const data = (0, _helper.filterData)(searchText, allRestaurants);
                             setFilteredRestaurants(data);
@@ -31756,7 +31757,7 @@ const Body = ()=>{
                 ]
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                className: "flex flex-wrap justify-between",
+                className: "grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-10 mx-24  ",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                         to: "/restaurant/" + restaurant.data.id,
@@ -31807,9 +31808,10 @@ function _interopRequireDefault(obj) {
 const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelString  })=>{
     const { user  } = (0, _react.useContext)(_UserContext.default);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "w-64 p-2  shadow-lg bg-rose-50 ",
+        className: "w-full font-nunito  hover:border hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer  ",
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                className: "w-full ",
                 src: _config.IMG_CDN_URL + cloudinaryImageId
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
@@ -31817,6 +31819,7 @@ const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelSt
                 children: name
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                className: "text-sm",
                 children: cuisines.join(", ")
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
@@ -33673,28 +33676,28 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/",
                             children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                                className: "px-4 hover:bg-red-200",
+                                className: "px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer",
                                 children: "Home"
                             }, "l1")
                         }),
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/about",
                             children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                                className: "px-4 hover:bg-red-200",
+                                className: "px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer",
                                 children: "About"
                             }, "l1")
                         }),
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/contact",
                             children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                                className: "px-4 hover:bg-red-200",
+                                className: "px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer",
                                 children: "Contact"
                             }, "l1")
                         }),
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/instamart",
                             children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                                className: "px-4 hover:bg-red-200",
+                                className: "px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer",
                                 children: "Instamart"
                             }, "l1")
                         }),
@@ -33702,7 +33705,7 @@ const Header = ()=>{
                             to: "/cart",
                             children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
                                 "data-testid": "cart",
-                                className: "px-4 hover:bg-red-200",
+                                className: "px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer",
                                 children: [
                                     "Cart - ",
                                     cartItems.length
@@ -35813,8 +35816,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var global = arguments[3];
 var process = require("7a98e042811f91a7");
+var global = arguments[3];
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({
@@ -39619,6 +39622,7 @@ const useRestaurant = (resId)=>{
         const data = await fetch(_config.FETCH_MENU_URL + resId);
         const json = await data.json();
         setRestaurants(json.data);
+        console.log(json);
     }
     return restaurant;
 };
