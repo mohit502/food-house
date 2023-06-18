@@ -247,11 +247,6 @@ img, video {
   margin: 1.5rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -269,12 +264,52 @@ img, video {
   display: flex;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-36 {
   height: 9rem;
 }
 
 .w-56 {
   width: 14rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-2 {
+  width: .5rem;
+}
+
+.w-2\.5 {
+  width: .625rem;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.w-\[3\%\] {
+  width: 3%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[\%\] {
+  width: % ;
+}
+
+.w-\[2\%\] {
+  width: 2%;
+}
+
+.w-\[25\%\] {
+  width: 25%;
 }
 
 .flex-wrap {
@@ -289,8 +324,14 @@ img, video {
   justify-content: space-between;
 }
 
-.rounded-md {
-  border-radius: .375rem;
+.rounded-l-md {
+  border-top-left-radius: .375rem;
+  border-bottom-left-radius: .375rem;
+}
+
+.rounded-r-md {
+  border-top-right-radius: .375rem;
+  border-bottom-right-radius: .375rem;
 }
 
 .border {
@@ -300,6 +341,11 @@ img, video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -312,14 +358,14 @@ img, video {
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-red-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-rose-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 113 133 / var(--tw-bg-opacity));
 }
 
 .bg-rose-50 {
@@ -348,8 +394,25 @@ img, video {
   padding-right: 1rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pl-2 {
+  padding-left: .5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
+}
+
+.font-nunito {
+  font-family: Nunito;
+}
+
+.font-roboto {
+  font-family: Roboto;
 }
 
 .text-2xl {
@@ -365,6 +428,11 @@ img, video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -416,9 +484,9 @@ img, video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-red-900:hover {
+.hover\:bg-rose-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

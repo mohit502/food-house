@@ -31713,7 +31713,7 @@ const Body = ()=>{
     }, []);
     console.log("render");
     async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.043921&lng=72.6716589&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
         //optional chaining
@@ -31728,13 +31728,13 @@ const Body = ()=>{
     return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "flex justify-center p-6 bg-rose-50 my-4",
+                className: "flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
                         type: "text",
                         value: searchText,
                         placeholder: "Search here",
-                        className: "outline-none h-18 rounded-md",
+                        className: " outline-none rounded-l-md h-12 text-base  pl-2 w-[25%]",
                         onChange: (e)=>{
                             setSearchText(e.target.value);
                         },
@@ -31745,7 +31745,7 @@ const Body = ()=>{
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                         "data-testid": "search-btn",
-                        className: "bg-rose-400 px-4 mx-5 rounded-md hover:bg-red-900",
+                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200",
                         onClick: ()=>{
                             const data = (0, _helper.filterData)(searchText, allRestaurants);
                             setFilteredRestaurants(data);
@@ -31756,7 +31756,7 @@ const Body = ()=>{
                 ]
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                className: "flex flex-wrap justify-center-center",
+                className: "flex flex-wrap justify-between",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                         to: "/restaurant/" + restaurant.data.id,
@@ -31807,7 +31807,7 @@ function _interopRequireDefault(obj) {
 const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelString  })=>{
     const { user  } = (0, _react.useContext)(_UserContext.default);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "w-56 p-2 m-2 shadow-lg bg-rose-50 ",
+        className: "w-64 p-2  shadow-lg bg-rose-50 ",
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                 src: _config.IMG_CDN_URL + cloudinaryImageId
@@ -31821,9 +31821,6 @@ const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelSt
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
                 children: lastMileTravelString
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                children: user.name
             })
         ]
     });
@@ -33671,7 +33668,7 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxRuntime.jsx)(Title, {}),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("ul", {
-                    className: "flex mt-12 ",
+                    className: "font-nunito  flex mt-12 ",
                     children: [
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/",
@@ -35816,8 +35813,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var process = require("7a98e042811f91a7");
 var global = arguments[3];
+var process = require("7a98e042811f91a7");
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({

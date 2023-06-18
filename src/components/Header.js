@@ -29,7 +29,7 @@ const Header = () => {
       <Title />
 
       <div>
-        <ul className="flex mt-12 ">
+        <ul className="font-nunito  flex mt-12 ">
           <Link to="/">
             <li className="px-4 hover:bg-red-200" key="l1">
               Home
