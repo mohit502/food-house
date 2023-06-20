@@ -17,7 +17,7 @@ const RestaurantMenu = () => {
     dispatch(addItem(item))
   }
 
-  console.log(restaurant);
+  console.log("restaurant data: ", restaurant);
   return !restaurant ? (
     <Shimmer />
   ) : (

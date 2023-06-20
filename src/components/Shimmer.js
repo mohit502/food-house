@@ -1,8 +1,10 @@
 import ShimmerImage from "../assets/img/shimmer-image.png";
 
 const Shimmer = () => {
+  
+
   return (
-    <div className="restaurant-list" data-testid="shimmer">
+    <div className="restaurant-list " data-testid="shimmer">
      { Array(30).fill("").map((e,index)=> (
       <div key={index} className="shimmer-card"></div>))}
     </div>
