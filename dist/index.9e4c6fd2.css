@@ -247,9 +247,9 @@ img, video {
   margin: 1.5rem;
 }
 
-.mx-24 {
-  margin-left: 6rem;
-  margin-right: 6rem;
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .my-4 {
@@ -368,6 +368,11 @@ img, video {
 .bg-rose-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 241 242 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -526,8 +531,8 @@ img, video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 

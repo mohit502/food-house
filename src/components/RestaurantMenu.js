@@ -22,8 +22,10 @@ const RestaurantMenu = () => {
     <Shimmer />
   ) : (
     <div className="menu flex">
-      <div className="m-6">
-        {/* <h1>Restraunt id: {resId}</h1> */}
+      <h1>{restaurant?.cards[0]?.card?.card?.info?.name}</h1>
+
+      {/* <div className="m-6">
+        
         <h2 className="text-4xl">{restaurant?.name}</h2>
         <img src={IMG_CDN_URL + restaurant?.cloudinaryImageId} />
         <h3 className="text-lg">
@@ -42,7 +44,7 @@ const RestaurantMenu = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

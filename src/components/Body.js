@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import { restaurantList } from "../config";
+import { restaurantList, restaurantCards } from "../config";
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ const Body = () => {
 
   async function getRestaurants() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6105073&lng=77.1145653&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
     );
 
     const json = await data.json();
@@ -31,7 +31,6 @@ const Body = () => {
     //optional chaining
     setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    console.log(json)
   }
 
   const online = useOnline();
@@ -46,9 +45,11 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16
+      <div
+        className="flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16
       
-      ">
+      "
+      >
         <input
           type="text"
           value={searchText}
@@ -82,11 +83,11 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-10 mx-24  ">
+      <div className="grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center gap-10 mx-16  ">
         {filteredRestaurants.map((restaurant) => {
           return (
             <Link
-              
+            className=""
               to={"/restaurant/" + restaurant.data.id}
               key={restaurant.data.id}
             >

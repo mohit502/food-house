@@ -31713,13 +31713,12 @@ const Body = ()=>{
     }, []);
     console.log("render");
     async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6105073&lng=77.1145653&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
         //optional chaining
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-        console.log(json);
     }
     const online = (0, _useOnline.default)();
     if (!online) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
@@ -31757,9 +31756,10 @@ const Body = ()=>{
                 ]
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                className: "grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-10 mx-24  ",
+                className: "grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center gap-10 mx-16  ",
                 children: filteredRestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                        className: "",
                         to: "/restaurant/" + restaurant.data.id,
                         children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantCard.default, {
                             ...restaurant.data
@@ -31808,7 +31808,7 @@ function _interopRequireDefault(obj) {
 const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelString  })=>{
     const { user  } = (0, _react.useContext)(_UserContext.default);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "w-full font-nunito  hover:border hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer  ",
+        className: "w-full font-nunito  hover:border hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer p-2  ",
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                 className: "w-full ",
@@ -35662,64 +35662,11 @@ const RestaurantMenu = ()=>{
         dispatch((0, _cartSlice.addItem)(item));
     };
     console.log(restaurant);
-    return !restaurant ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return !restaurant ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
         className: "menu flex",
-        children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "m-6",
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
-                        className: "text-4xl",
-                        children: restaurant?.name
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                        src: _config.IMG_CDN_URL + restaurant?.cloudinaryImageId
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                        className: "text-lg",
-                        children: [
-                            restaurant?.area,
-                            ", ",
-                            restaurant?.city
-                        ]
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                        className: "text-lg",
-                        children: [
-                            restaurant?.avgRating,
-                            " ⭐"
-                        ]
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
-                        className: "text-",
-                        children: restaurant?.costForTwoMsg
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                        className: "text-2xl",
-                        children: "Menu"
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("ul", {
-                        children: Object.values(restaurant?.menu?.items).map((item)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
-                                className: "p-1",
-                                children: [
-                                    item.name,
-                                    " -",
-                                    " ",
-                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
-                                        className: "bg-green-100 p-1",
-                                        onClick: ()=>addFoodItem(item),
-                                        children: "Add Item"
-                                    })
-                                ]
-                            }, item.id))
-                    })
-                ]
-            })
-        ]
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+            children: restaurant?.cards[0]?.card?.card?.info?.name
+        })
     });
 };
 _c = RestaurantMenu;
@@ -39619,7 +39566,7 @@ const useRestaurant = (resId)=>{
         getRestaurantInfo();
     }, []);
     async function getRestaurantInfo() {
-        const data = await fetch(_config.FETCH_MENU_URL + resId);
+        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=121603&submitAction=ENTER");
         const json = await data.json();
         setRestaurants(json.data);
         console.log(json);
