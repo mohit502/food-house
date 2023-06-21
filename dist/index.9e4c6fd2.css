@@ -247,9 +247,9 @@ img, video {
   margin: 1.5rem;
 }
 
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-4 {
@@ -281,6 +281,38 @@ img, video {
   height: 9rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[3px\] {
+  height: 3px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[264px\] {
+  height: 264px;
+}
+
+.h-\[24px\] {
+  height: 24px;
+}
+
+.h-\[244px\] {
+  height: 244px;
+}
+
 .w-56 {
   width: 14rem;
 }
@@ -289,8 +321,56 @@ img, video {
   width: 25%;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[260px\] {
+  width: 260px;
+}
+
+.w-\[2640px\] {
+  width: 2640px;
+}
+
+.w-\[26400px\] {
+  width: 26400px;
+}
+
+.w-\[264px\] {
+  width: 264px;
+}
+
+.w-\[26px\] {
+  width: 26px;
+}
+
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[24px\] {
+  width: 24px;
+}
+
+.w-\[242px\] {
+  width: 242px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .cursor-pointer {
@@ -313,8 +393,8 @@ img, video {
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .rounded-md {
@@ -370,9 +450,19 @@ img, video {
   background-color: rgb(255 241 242 / var(--tw-bg-opacity));
 }
 
-.bg-slate-900 {
+.bg-slate-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -452,6 +542,11 @@ img, video {
   font-weight: 700;
 }
 
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -519,18 +614,30 @@ img, video {
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[750px\] {
+    width: 750px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-\[1000px\] {
+    width: 1000px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-\[1400px\] {
+    width: 1400px;
+  }
+
   .xl\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
