@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
-import Logo from "../assets/img/food-house.png";
+import Logo from "../assets/img/logo2.jpg";
+import Fork from "../assets/img/fork.png";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
@@ -7,8 +8,8 @@ import { useSelector } from "react-redux";
 
 export const Title = () => {
   return (
-    <a href="/">
-      <img data-testid="logo" className="h-36 p-4" alt="logo" src={Logo}></img>
+    <a href="/" className="h-20 mx-4 my-2">
+      <img data-testid="logo" className="h-full " alt="logo" src={Logo}></img>
     </a>
   );
 };
@@ -25,11 +26,11 @@ const Header = () => {
   console.log(cartItems);
 
   return (
-    <div className="flex justify-between  bg-red-50 text-xl shadow-md ">
+    <div className="flex justify-between  bg-amber-100 text-xl shadow-md items-center">
       <Title />
 
       <div>
-        <ul className="font-nunito  flex mt-12 ">
+        <ul className="font-nunito  flex items-center">
           <Link to="/">
             <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
               Home
@@ -59,7 +60,7 @@ const Header = () => {
           </Link>
         </ul>
       </div>
-      <h1 data-testid="online-status">{isOnline ? "🟢" : "🔴"}</h1>
+      {/* <h1 data-testid="online-status">{isOnline ? "🟢" : "🔴"}</h1>
       <span>{user.name}</span>
       {isLoggedIn ? (
         <button className="pr-4" onClick={() => setIsLoggedIn(false)}>
@@ -70,7 +71,7 @@ const Header = () => {
         <button className="pr-4" onClick={() => setIsLoggedIn(true)}>
           Login
         </button>
-      )}
+      )} */}
     </div>
   );
 };

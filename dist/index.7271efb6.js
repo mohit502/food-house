@@ -31728,13 +31728,13 @@ const Body = ()=>{
     return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16\r ",
+                className: "flex font-nunito justify-center p-6  md-4  py-16\r ",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
                         type: "text",
                         value: searchText,
-                        placeholder: "Search here",
-                        className: " outline-none rounded-l-md h-12 text-base  pl-2 w-[25%]\r ",
+                        placeholder: "Search here.. [site under construction]",
+                        className: " outline-none  border border-black  rounded-l-md h-12 text-base  pl-2 w-[25%]\r ",
                         onChange: (e)=>{
                             setSearchText(e.target.value);
                         },
@@ -31745,7 +31745,7 @@ const Body = ()=>{
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                         "data-testid": "search-btn",
-                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200\r hover:scale-105 transition-all duration-200 cursor-pointer\r ",
+                        className: "bg-red-100  border border-black border-l-0 px-4  rounded-r-md font-bold hover:bg-rose-200\r hover:scale-105 transition-all duration-200 cursor-pointer\r ",
                         onClick: ()=>{
                             const data = (0, _helper.filterData)(searchText, allRestaurants);
                             setFilteredRestaurants(data);
@@ -33505,16 +33505,16 @@ const ShimmerBody = ()=>{
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "flex font-nunito justify-center p-6  bg-blue-900 my-4 py-16\r ",
+                className: "flex font-nunito justify-center p-6 md-4 py-16\r ",
                 children: [
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
                         type: "text",
                         placeholder: "Search here",
-                        className: " outline-none rounded-l-md h-12 text-base  pl-2 w-[25%]\r "
+                        className: " outline-none border border-black  rounded-l-md h-12 text-base  pl-2 w-[25%]\r "
                     }),
                     /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                         "data-testid": "search-btn",
-                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200\r hover:scale-105 transition-all duration-200 cursor-pointer\r ",
+                        className: "bg-red-100 px-4  rounded-r-md font-bold hover:bg-rose-200 border border-black\r border-l-0 \r hover:scale-105 transition-all duration-200 cursor-pointer\r ",
                         children: "Search"
                     })
                 ]
@@ -33656,7 +33656,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.Title = void 0;
 var _react = require("209b3ec3bc2c4ffc");
-var _foodHouse = _interopRequireDefault(require("59cd7393bebb95a1"));
+var _logo = _interopRequireDefault(require("677396318041b745"));
+var _fork = _interopRequireDefault(require("a6e222768f91544d"));
 var _reactRouterDom = require("d0d841d042991d16");
 var _useOnline = _interopRequireDefault(require("e3dfd7123af04956"));
 var _UserContext = _interopRequireDefault(require("1da125c0db571d63"));
@@ -33670,11 +33671,12 @@ function _interopRequireDefault(obj) {
 const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxRuntime.jsx)("a", {
         href: "/",
+        className: "h-20 mx-4 my-2",
         children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
             "data-testid": "logo",
-            className: "h-36 p-4",
+            className: "h-full ",
             alt: "logo",
-            src: _foodHouse.default
+            src: _logo.default
         })
     });
 };
@@ -33687,12 +33689,12 @@ const Header = ()=>{
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     console.log(cartItems);
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "flex justify-between  bg-red-50 text-xl shadow-md ",
+        className: "flex justify-between  bg-amber-100 text-xl shadow-md items-center",
         children: [
             /*#__PURE__*/ (0, _jsxRuntime.jsx)(Title, {}),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("ul", {
-                    className: "font-nunito  flex mt-12 ",
+                    className: "font-nunito  flex items-center",
                     children: [
                         /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                             to: "/",
@@ -33735,26 +33737,6 @@ const Header = ()=>{
                         })
                     ]
                 })
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                "data-testid": "online-status",
-                children: isOnline ? "\uD83D\uDFE2" : "\uD83D\uDD34"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                children: user.name
-            }),
-            isLoggedIn ? /*#__PURE__*/ (0, _jsxRuntime.jsxs)("button", {
-                className: "pr-4",
-                onClick: ()=>setIsLoggedIn(false),
-                children: [
-                    " ",
-                    "Logout",
-                    " "
-                ]
-            }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
-                className: "pr-4",
-                onClick: ()=>setIsLoggedIn(true),
-                children: "Login"
             })
         ]
     });
@@ -33771,10 +33753,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"209b3ec3bc2c4ffc":"21dqq","59cd7393bebb95a1":"cDHHE","d0d841d042991d16":"9xmpe","e3dfd7123af04956":"74Yls","1da125c0db571d63":"c5vgB","d583cfad9ad3c520":"bdVon","6f97d0457ba2b121":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cDHHE":[function(require,module,exports) {
-module.exports = require("a2dad16dff47a38d").getBundleURL("aXMci") + "food-house.d211f049.png" + "?" + Date.now();
-
-},{"a2dad16dff47a38d":"lgJ39"}],"bdVon":[function(require,module,exports) {
+},{"209b3ec3bc2c4ffc":"21dqq","d0d841d042991d16":"9xmpe","e3dfd7123af04956":"74Yls","1da125c0db571d63":"c5vgB","d583cfad9ad3c520":"bdVon","6f97d0457ba2b121":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","677396318041b745":"bq8Kk","a6e222768f91544d":"dDhxM"}],"bdVon":[function(require,module,exports) {
 // The primary entry point assumes we're working with standard ReactDOM/RN, but
 // older versions that do not include `useSyncExternalStore` (React 16.9 - 17.x).
 // Because of that, the useSyncExternalStore compat shim is needed.
@@ -35540,7 +35519,13 @@ const useStore = /*#__PURE__*/ createStoreHook();
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bq8Kk":[function(require,module,exports) {
+module.exports = require("d803479f513af835").getBundleURL("aXMci") + "logo2.ec1d6fc8.jpg" + "?" + Date.now();
+
+},{"d803479f513af835":"lgJ39"}],"dDhxM":[function(require,module,exports) {
+module.exports = require("5b5378b290291302").getBundleURL("aXMci") + "fork.6cb23f0a.png" + "?" + Date.now();
+
+},{"5b5378b290291302":"lgJ39"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
