@@ -584,70 +584,101 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$8238.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("275093e756b15d4d");
-var _jsxRuntime = require("50ff2fc2e6ccd0ad");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Section = ({ title , description , isVisible , setIsVisible  })=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "border border-black m-2 ",
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "p-2 font-bold text-3xl",
                 children: title
-            }),
-            !isVisible ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            !isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "p-2 underline",
                 onClick: ()=>{
                     setIsVisible(true);
                 },
                 children: "Show"
-            }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 11,
+                columnNumber: 21
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "p-2 underline",
                 onClick: ()=>{
                     setIsVisible(false);
                 },
                 children: "Hide"
-            }),
-            isVisible && /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 15,
+                columnNumber: 21
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "p-2 ",
                 children: description
-            })
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 21,
+                columnNumber: 21
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/components/Instamart.js",
+        lineNumber: 8,
+        columnNumber: 10
+    }, undefined);
 };
 _c = Section;
 const Instamart = ()=>{
+    _s();
     const [visibleSection, setVisibleSection] = (0, _react.useState)("team");
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 isVisible: visibleSection === "about",
                 setIsVisible: ()=>setIsVisibleSection("about"),
                 title: "About",
                 description: "idfoisjdofisjdoisjdofijsod sodijfosidjfosidjfosidjfoosidjfosidjfosidjfosidfjosi"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 isVisible: visibleSection === "team",
                 setIsVisible: ()=>setIsVisibleSection("team"),
                 title: "Team",
                 description: "idfoisjdofisjdoisjdofijsod sodijfosidjfosidjfosidjfoosidjfosidjfosidjfosidfjosi"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 isVisible: visibleSection === "career",
                 setIsVisible: ()=>setIsVisibleSection("career"),
                 title: "Careers",
                 description: "idfoisjdofisjdoisjdofijsod sodijfosidjfosidjfosidjfoosidjfosidjfosidjfosidfjosi"
-            })
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true);
 };
+_s(Instamart, "oxQsWSPH581uWzYdmUIWRjyO09s=");
 _c1 = Instamart;
-var _default = Instamart;
-exports.default = _default;
+exports.default = Instamart;
 var _c, _c1;
 $RefreshReg$(_c, "Section");
 $RefreshReg$(_c1, "Instamart");
@@ -657,6 +688,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","275093e756b15d4d":"21dqq","50ff2fc2e6ccd0ad":"6AEwr"}]},["1xC6H","2paN5"], null, "parcelRequire164e")
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["1xC6H","2paN5"], null, "parcelRequire164e")
 
 //# sourceMappingURL=Instamart.0762395e.js.map

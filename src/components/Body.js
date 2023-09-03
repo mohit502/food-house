@@ -23,14 +23,18 @@ const Body = () => {
 
   async function getRestaurants() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
 
     const json = await data.json();
-    console.log(json);
+    console.log("body ka json", json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     //optional chaining
-    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setAllRestaurants(
+      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setFilteredRestaurants(
+      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   }
 
   const online = useOnline();
@@ -41,15 +45,11 @@ const Body = () => {
 
   // if (!allRestaurants) return null;
 
-  return allRestaurants.length === 0 ? (
+  return allRestaurants.length == 0 ? (
     <ShimmerBody />
   ) : (
     <>
-      <div
-        className="flex font-nunito justify-center p-6  md-4  py-16
-      
-      "
-      >
+      <div className="flex font-nunito justify-center p-6  md-4  py-1">
         <input
           type="text"
           value={searchText}
@@ -89,10 +89,10 @@ const Body = () => {
           return (
             <Link
               className=""
-              to={"/restaurant/" + restaurant.data.id}
-              key={restaurant.data.id}
+              to={"/restaurant/" + restaurant?.info?.id}
+              key={restaurant?.info?.id}
             >
-              <RestaurantCard {...restaurant.data} />
+            <RestaurantCard {...restaurant.info} />
             </Link>
           );
         })}

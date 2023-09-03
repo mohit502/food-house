@@ -55,7 +55,7 @@ const Header = () => {
 
           <Link to="/cart">
             <li data-testid="cart" className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
-              Cart - {cartItems.length}
+              🛒-{cartItems.length}
             </li>
           </Link>
         </ul>

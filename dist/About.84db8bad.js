@@ -584,38 +584,49 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5b98.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("80aeaa56b167bfd"));
-var _reactRouterDom = require("35d1b4219fd62bf2");
-var _Profile = _interopRequireDefault(require("8f4d741281ae8a6f"));
-var _ProfileClass = _interopRequireDefault(require("2654b5296c34aa9a"));
-var _jsxRuntime = require("dc36f03489a780fc");
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _profile = require("./Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _profileClass = require("./ProfileClass");
+var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 const About2 = ()=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "About Food House \uD83E\uDD58"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Food House is an Food Ordering Application \uD83D\uDCBB"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Profile.default, {
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
                 name: "Mohit"
-            })
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/components/About.js",
+        lineNumber: 6,
+        columnNumber: 10
+    }, undefined);
 };
 _c = About2;
-class About extends _react.default.Component {
+class About extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
     // console.log("parent - contructor");
@@ -625,23 +636,38 @@ class About extends _react.default.Component {
     }
     render() {
         // console.log("parent - render");
-        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "About Food House \uD83E\uDD58"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "Food House is an Food Ordering Application \uD83D\uDCBB"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Profile.default, {
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
                     name: "First Child"
-                })
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this)
             ]
-        });
+        }, void 0, true, {
+            fileName: "src/components/About.js",
+            lineNumber: 26,
+            columnNumber: 12
+        }, this);
     }
 }
-var _default = About;
-/* Order of console
+exports.default = About; /* Order of console
 
 parent- constructor
 parent- render
@@ -649,7 +675,7 @@ child - constructor
 child - render
 child - componentDidMount
 parent - componentDidMount
-*/ /**
+*/  /**
  *
  * Parent Constructor
  * Parent render
@@ -665,7 +691,7 @@ parent - componentDidMount
  *  Parent componentDidMount
  *
  *
- */ exports.default = _default;
+ */ 
 var _c;
 $RefreshReg$(_c, "About2");
 
@@ -674,26 +700,19 @@ $RefreshReg$(_c, "About2");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","80aeaa56b167bfd":"21dqq","35d1b4219fd62bf2":"9xmpe","8f4d741281ae8a6f":"h0rtF","2654b5296c34aa9a":"aeEz8","dc36f03489a780fc":"6AEwr"}],"aeEz8":[function(require,module,exports) {
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Profile":"h0rtF","./ProfileClass":"aeEz8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aeEz8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$1beb.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("6c3eceb3e153d230"));
-var _jsxRuntime = require("908cce75ed5a1ec1");
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-class Profile extends _react.default.Component {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props); //super(props) helps us use props inside the constructor, if we dont wanna use props in constructor then we should not pass that in super(props)
         // super needs to be mandatory called in constructor to use "this"
@@ -728,44 +747,71 @@ class Profile extends _react.default.Component {
     }
     render() {
         // console.log("child - render" + this.props.name);
-        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "Profile Class Component"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Name : ",
                         this.state.userInfo.name
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: this.state.userInfo.avatar_url
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Location :",
                         this.state.userInfo.location
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Login : ",
                         this.state.userInfo.login
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: [
                         "Bio : ",
                         this.state.userInfo.bio
                     ]
-                })
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 48,
+                    columnNumber: 9
+                }, this)
             ]
-        });
+        }, void 0, true, {
+            fileName: "src/components/ProfileClass.js",
+            lineNumber: 42,
+            columnNumber: 12
+        }, this);
     }
 }
-var _default = Profile;
-/**
+exports.default = Profile; /**
  *
  *  child constructor
  *  child render
@@ -778,13 +824,13 @@ var _default = Profile;
  *  render
  *
  *
- */ exports.default = _default;
+ */ 
 
   $parcel$ReactRefreshHelpers$1beb.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"6c3eceb3e153d230":"21dqq","908cce75ed5a1ec1":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","4ns5B"], null, "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","4ns5B"], null, "parcelRequire164e")
 
 //# sourceMappingURL=About.84db8bad.js.map
