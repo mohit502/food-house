@@ -11,31 +11,33 @@ import UserContext from "../utils/UserContext";
 const Body = () => {
   const [searchText, setSearchText] = useState("");
 
-  const [allRestaurants, setAllRestaurants] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const [allRestaurants, setAllRestaurants] = useState(restaurantList); //keep this as empty array if using the dynamic data
+  const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantList); //this also should be empty array
 
   const { user, setUser } = useContext(UserContext);
 
-  useEffect(() => {
+  // Use effect should be used when using the dynamic data
+  /* useEffect(() => {
     getRestaurants();
   }, []);
-  console.log("render");
+  console.log("render"); */
 
-  async function getRestaurants() {
+  // Use the below function when you want to set the restaurant list data dynamically
+ /* async function getRestaurants() {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
 
     const json = await data.json();
-    console.log("body ka json", json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    console.log("body ka json", json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     //optional chaining
     setAllRestaurants(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurants(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-  }
+  } */
 
   const online = useOnline();
 

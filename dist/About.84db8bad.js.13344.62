@@ -635,7 +635,6 @@ class About extends (0, _reactDefault.default).Component {
         super(props);
     }
     componentDidMount() {}
-    //FD9C0D
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
             className: "flex justify-around pt-10",
@@ -652,53 +651,60 @@ class About extends (0, _reactDefault.default).Component {
                                     className: "h-20 mx-4 my-2"
                                 }, void 0, false, {
                                     fileName: "src/components/About.js",
-                                    lineNumber: 28,
+                                    lineNumber: 25,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    className: "font-lobster text-8xl text-logo-color",
+                                    className: "font-lobster text-8xl text-rose-700",
                                     children: "Food House"
                                 }, void 0, false, {
                                     fileName: "src/components/About.js",
-                                    lineNumber: 29,
+                                    lineNumber: 26,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/About.js",
-                            lineNumber: 27,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: " flex items-center justify-center pt-10",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                    className: "font-lobsterTwo text-logo-color-lite text-5xl ",
-                                    children: "Food Made with"
-                                }, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 32,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _lovePngDefault.default),
-                                    alt: "love",
-                                    className: " ml-2 w-[70px] "
-                                }, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 35,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            className: "border ",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                className: "font-nunito text-4xl",
+                                children: [
+                                    "Food Made with",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "border-red-200",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _lovePngDefault.default),
+                                            alt: "love",
+                                            className: "w-[50px]"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.js",
+                                            lineNumber: 32,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/About.js",
+                                        lineNumber: 31,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/About.js",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 31,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/About.js",
-                    lineNumber: 26,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -707,18 +713,18 @@ class About extends (0, _reactDefault.default).Component {
                         alt: "about-page-pic"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 39,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 38,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 25,
+            lineNumber: 22,
             columnNumber: 12
         }, this);
     }
@@ -756,7 +762,7 @@ $RefreshReg$(_c, "About2");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Profile":"h0rtF","./ProfileClass":"aeEz8","../assets/img/logo2.jpg":"9IDKw","../assets/img/love.png":"d7GYB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aeEz8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Profile":"h0rtF","./ProfileClass":"aeEz8","../assets/img/logo2.jpg":"9IDKw","../assets/img/love.png":"d7GYB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aeEz8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

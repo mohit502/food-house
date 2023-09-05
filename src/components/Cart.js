@@ -4,7 +4,7 @@ import { clearCart } from "../utils/cartSlice";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  console.log("cart items", cartItems);
 
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const Cart = () => {
       <button className="bg-gray-100 hover:bg-red-100 p-2 m-5" onClick={()=> handleClearCart()}>Clear Cart 🗑</button>
       <div className="flex flex-wrap">
         {cartItems.map((item) => {
-          return <FoodItem key={item.id} {...item} />;
+          return <FoodItem key={item.id} {...item} />;  
         })}
       </div>
     </>
