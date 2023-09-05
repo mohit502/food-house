@@ -1,15 +1,16 @@
 import { useState, useContext } from "react";
-import Logo from "../assets/img/logo2.jpg";
+import LogoImage from "../assets/img/logo2.jpg";
 import Fork from "../assets/img/fork.png";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 
-export const Title = () => {
+export const Logo = () => {
   return (
-    <a href="/" className="h-20 mx-4 my-2">
-      <img data-testid="logo" className="h-full " alt="logo" src={Logo}></img>
+    <a href="/" className="h-20 mx-28 mr-48 flex items-center ">
+      <img data-testid="logo" className="h-3/4 " alt="logo" src={LogoImage}></img>
+      <h2 className="font-lobster text-4xl ml-2 text-logo-color">Food House</h2>
     </a>
   );
 };
@@ -26,35 +27,36 @@ const Header = () => {
   console.log(cartItems);
 
   return (
-    <div className="flex justify-between  bg-amber-100 text-xl shadow-md items-center">
-      <Title />
+   
+     <div className="flex bg-stone-100 text-xl shadow-md items-center">
+      <Logo />
 
-      <div>
+      <div className="ml-80">
         <ul className="font-nunito  flex items-center">
           <Link to="/">
-            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
+            <li className="px-4 font-bold hover:text-logo-color cursor-pointer" key="l1">
               Home
             </li>
           </Link>
 
           <Link to="/about">
-            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
+            <li className="px-4 font-bold hover:text-logo-color cursor-pointer" key="l1">
               About
             </li>
           </Link>
           <Link to="/contact">
-            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
+            <li className="px-4 font-bold hover:text-logo-color cursor-pointer" key="l1">
               Contact
             </li>
           </Link>
           <Link to="/instamart">
-            <li className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
+            <li className="px-4 font-bold hover:text-logo-color cursor-pointer" key="l1">
               Instamart
             </li>
           </Link>
 
           <Link to="/cart">
-            <li data-testid="cart" className="px-4  hover:bg-red-200 transition-all duration-400 rounded-md cursor-pointer" key="l1">
+            <li data-testid="cart" className="px-4 font-bold hover:text-logo-color cursor-pointer" key="l1">
               🛒-{cartItems.length}
             </li>
           </Link>
@@ -72,7 +74,7 @@ const Header = () => {
           Login
         </button>
       )} */}
-    </div>
+    </div> 
   );
 };
 

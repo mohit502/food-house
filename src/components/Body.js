@@ -51,12 +51,12 @@ const Body = () => {
     <ShimmerBody />
   ) : (
     <>
-      <div className="flex font-nunito justify-center p-6  md-4  py-1">
+      <div className="flex font-nunito justify-center p-6    py-6">
         <input
           type="text"
           value={searchText}
           placeholder="Search here.. [site under construction]"
-          className=" outline-none  border border-black  rounded-l-md h-12 text-base  pl-2 w-[25%]
+          className=" outline-none  border border-black  rounded-l-sm h-12 text-base  pl-2 w-[25%]
           
           "
           onChange={(e) => {
@@ -70,9 +70,9 @@ const Body = () => {
         />
         <button
           data-testid="search-btn"
-          className="bg-red-100  border border-black border-l-0 px-4  rounded-r-md font-bold hover:bg-rose-200
+          className="bg-stone-200  border border-black border-l-0 px-4  rounded-r-sm font-bold hover:bg-amber-300
           
-          hover:scale-105 transition-all duration-200 cursor-pointer
+        
           "
           onClick={() => {
             const data = filterData(searchText, allRestaurants);

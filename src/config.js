@@ -499,6 +499,95 @@ export const FETCH_MENU_URL =
     },
     {
       "info": {
+          "id": "132622",
+          "name": "Marwadi Chaat & Tiffin Services Shanti nagar",
+          "cloudinaryImageId": "e8f48a82caf1cdc428448f64dba7b61e",
+          "locality": "Lakshmi road",
+          "areaName": "Shanthi Nagar",
+          "costForTwo": "₹300 for two",
+          "cuisines": [
+              "Rajasthani",
+              "North Indian",
+              "Snacks",
+              "Chaat"
+          ],
+          "avgRating": 3.7,
+          "veg": true,
+          "feeDetails": {
+              "restaurantId": "132622",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 2900
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 2900
+          },
+          "parentId": "20091",
+          "avgRatingString": "3.7",
+          "totalRatingsString": "5K+",
+          "sla": {
+              "deliveryTime": 31,
+              "lastMileTravel": 2.6,
+              "serviceability": "SERVICEABLE",
+              "slaString": "31 mins",
+              "lastMileTravelString": "2.6 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-12 00:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "50% OFF",
+              "subHeader": "UPTO ₹100"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-2f561d24-e6de-4751-8dd6-ac0c8391423b"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/marwadi-chaat-and-tiffin-services-shanti-nagar-lakshmi-road-shanthi-nagar-bangalore-132622",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+    {
+      "info": {
         "id": "325",
         "name": "Sree Krishna Kafe",
         "cloudinaryImageId": "us72sjlfo9opsmi8fi6u",
@@ -1098,7 +1187,920 @@ export const FETCH_MENU_URL =
         "type": "WEBLINK"
       },
       "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-    }
+    },
+    {
+      "info": {
+          "id": "396753",
+          "name": "Wendy's",
+          "cloudinaryImageId": "a2ec5418246b622ec4baa3bd051ef6ab",
+          "locality": "KMK Towers",
+          "areaName": "Residency Road",
+          "costForTwo": "₹200 for two",
+          "cuisines": [
+              "Fast Food",
+              "Snacks",
+              "American",
+              "Burgers",
+              "Desserts",
+              "Beverages"
+          ],
+          "avgRating": 4.1,
+          "feeDetails": {
+              "restaurantId": "396753",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 2800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 2800
+          },
+          "parentId": "972",
+          "avgRatingString": "4.1",
+          "totalRatingsString": "1K+",
+          "sla": {
+              "deliveryTime": 25,
+              "lastMileTravel": 2.2,
+              "serviceability": "SERVICEABLE",
+              "slaString": "25 mins",
+              "lastMileTravelString": "2.2 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-06 00:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "aggregatedDiscountInfoV2": {},
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/wendys-kmk-towers-residency-road-bangalore-396753",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "2914",
+          "name": "Bheema's",
+          "cloudinaryImageId": "aff0be3ebc62e299701c087b8dcd1c0d",
+          "locality": "Church Street",
+          "areaName": "Ashok Nagar",
+          "costForTwo": "₹550 for two",
+          "cuisines": [
+              "Andhra"
+          ],
+          "avgRating": 4.4,
+          "feeDetails": {
+              "restaurantId": "2914",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 4300
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 4300
+          },
+          "parentId": "1841",
+          "avgRatingString": "4.4",
+          "totalRatingsString": "10K+",
+          "sla": {
+              "deliveryTime": 22,
+              "lastMileTravel": 1.5,
+              "serviceability": "SERVICEABLE",
+              "slaString": "22 mins",
+              "lastMileTravelString": "1.5 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-05 15:30:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "aggregatedDiscountInfoV2": {},
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/bheemas-church-street-ashok-nagar-bangalore-2914",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "570511",
+          "name": "Bakingo",
+          "cloudinaryImageId": "qwbqggsxzw86vgk60c9c",
+          "locality": "MV Jayanthi Road",
+          "areaName": "Vasanth Nagar",
+          "costForTwo": "₹299 for two",
+          "cuisines": [
+              "Bakery",
+              "Desserts",
+              "Beverages",
+              "Snacks"
+          ],
+          "avgRating": 4.4,
+          "feeDetails": {
+              "restaurantId": "570511",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 5800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 5800
+          },
+          "parentId": "3818",
+          "avgRatingString": "4.4",
+          "totalRatingsString": "1K+",
+          "sla": {
+              "deliveryTime": 24,
+              "lastMileTravel": 3,
+              "serviceability": "SERVICEABLE",
+              "slaString": "24 mins",
+              "lastMileTravelString": "3.0 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-06 01:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "aggregatedDiscountInfoV2": {},
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/bakingo-mv-jayanthi-road-vasanth-nagar-bangalore-570511",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "739040",
+          "name": "Restaurant Chef Pillai",
+          "cloudinaryImageId": "475688804b4b6086854d60b3a68440e7",
+          "locality": "Ashok Nagar",
+          "areaName": "Central Bangalore",
+          "costForTwo": "₹1400 for two",
+          "cuisines": [
+              "South Indian",
+              "Seafood"
+          ],
+          "avgRating": 4.7,
+          "feeDetails": {
+              "restaurantId": "739040",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 2800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 2800
+          },
+          "parentId": "318016",
+          "avgRatingString": "4.7",
+          "totalRatingsString": "20+",
+          "sla": {
+              "deliveryTime": 25,
+              "lastMileTravel": 1.8,
+              "serviceability": "SERVICEABLE",
+              "slaString": "25 mins",
+              "lastMileTravelString": "1.8 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-05 23:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "10% OFF",
+              "subHeader": "ABOVE ₹159",
+              "discountTag": "FLAT DEAL"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "isNewlyOnboarded": true,
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/restaurant-chef-pillai-ashok-nagar-central-bangalore-bangalore-739040",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "281469",
+          "name": "Lavonne",
+          "cloudinaryImageId": "emlehbuwgsmryxhwzhvq",
+          "locality": "St. Marks Road",
+          "areaName": "St. Marks Road",
+          "costForTwo": "₹750 for two",
+          "cuisines": [
+              "Bakery",
+              "Desserts"
+          ],
+          "avgRating": 4.6,
+          "feeDetails": {
+              "restaurantId": "281469",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 4300
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 4300
+          },
+          "parentId": "10530",
+          "avgRatingString": "4.6",
+          "totalRatingsString": "1K+",
+          "sla": {
+              "deliveryTime": 17,
+              "lastMileTravel": 0.6,
+              "serviceability": "SERVICEABLE",
+              "slaString": "17 mins",
+              "lastMileTravelString": "0.6 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-05 22:40:00",
+              "opened": true
+          },
+          "badges": {
+              "imageBadges": [
+                  {
+                      "imageId": "newg.png",
+                      "description": "Gourmet"
+                  }
+              ],
+              "textExtendedBadges": [
+                  {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "options available",
+                      "fontColor": "#7E808C"
+                  }
+              ]
+          },
+          "isOpen": true,
+          "aggregatedDiscountInfoV2": {},
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {
+                      "badgeObject": [
+                          {
+                              "attributes": {
+                                  "description": "Gourmet",
+                                  "imageId": "newg.png"
+                              }
+                          }
+                      ]
+                  },
+                  "textBased": {},
+                  "textExtendedBadges": {
+                      "badgeObject": [
+                          {
+                              "attributes": {
+                                  "description": "",
+                                  "fontColor": "#7E808C",
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available"
+                              }
+                          }
+                      ]
+                  }
+              }
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/lavonne-st-marks-road-bangalore-281469",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "5938",
+          "name": "Burger King",
+          "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+          "locality": "Tasker Town",
+          "areaName": "Shivaji Nagar",
+          "costForTwo": "₹350 for two",
+          "cuisines": [
+              "Burgers",
+              "American"
+          ],
+          "avgRating": 4.1,
+          "feeDetails": {
+              "restaurantId": "5938",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 2800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 2800
+          },
+          "parentId": "166",
+          "avgRatingString": "4.1",
+          "totalRatingsString": "10K+",
+          "sla": {
+              "deliveryTime": 25,
+              "lastMileTravel": 2.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "25 mins",
+              "lastMileTravelString": "2.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-06 02:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "60% OFF",
+              "subHeader": "UPTO ₹120"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/burger-king-tasker-town-shivaji-nagar-bangalore-5938",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "588619",
+          "name": "KFC",
+          "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+          "locality": "Brigade Rd",
+          "areaName": "Ashok Nagar",
+          "costForTwo": "₹400 for two",
+          "cuisines": [
+              "Burgers",
+              "Biryani",
+              "American",
+              "Snacks",
+              "Fast Food"
+          ],
+          "avgRating": 4.1,
+          "feeDetails": {
+              "restaurantId": "588619",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 2800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 2800
+          },
+          "parentId": "547",
+          "avgRatingString": "4.1",
+          "totalRatingsString": "500+",
+          "sla": {
+              "deliveryTime": 25,
+              "lastMileTravel": 2.8,
+              "serviceability": "SERVICEABLE",
+              "slaString": "25 mins",
+              "lastMileTravelString": "2.8 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-06 01:00:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "20% OFF",
+              "subHeader": "UPTO ₹50"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/kfc-brigade-rd-ashok-nagar-bangalore-588619",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "393107",
+          "name": "EatFit",
+          "cloudinaryImageId": "6126c9b45de2cb222405c1af8a321e74",
+          "locality": "Ali Asker Road",
+          "areaName": "Cunningham Road",
+          "costForTwo": "₹270 for two",
+          "cuisines": [
+              "Chinese",
+              "Healthy Food",
+              "Tandoor",
+              "Pizzas",
+              "North Indian",
+              "Thalis",
+              "Biryani"
+          ],
+          "avgRating": 4.3,
+          "feeDetails": {
+              "restaurantId": "393107",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 3800
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 3800
+          },
+          "parentId": "76139",
+          "avgRatingString": "4.3",
+          "totalRatingsString": "1K+",
+          "sla": {
+              "deliveryTime": 23,
+              "lastMileTravel": 3,
+              "serviceability": "SERVICEABLE",
+              "slaString": "23 mins",
+              "lastMileTravelString": "3.0 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-05 23:59:00",
+              "opened": true
+          },
+          "badges": {
+              "textExtendedBadges": [
+                  {
+                      "iconId": "guiltfree/GF_Logo_android_3x",
+                      "shortDescription": "brand",
+                      "fontColor": "#7E808C"
+                  }
+              ]
+          },
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {
+                      "badgeObject": [
+                          {
+                              "attributes": {
+                                  "description": "",
+                                  "fontColor": "#7E808C",
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "brand"
+                              }
+                          }
+                      ]
+                  }
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "40% OFF",
+              "subHeader": "UPTO ₹80"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/eatfit-ali-asker-road-cunningham-road-bangalore-393107",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "300804",
+          "name": "Jose Mess",
+          "cloudinaryImageId": "bbpwtyy08vavft4vqb7s",
+          "locality": "SG Palya",
+          "areaName": "Tavarekere",
+          "costForTwo": "₹200 for two",
+          "cuisines": [
+              "Indian"
+          ],
+          "avgRating": 4.3,
+          "feeDetails": {
+              "restaurantId": "300804",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 6100
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 6100
+          },
+          "parentId": "20129",
+          "avgRatingString": "4.3",
+          "totalRatingsString": "5K+",
+          "sla": {
+              "deliveryTime": 35,
+              "lastMileTravel": 6.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "35 mins",
+              "lastMileTravelString": "6.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-05 22:45:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "aggregatedDiscountInfoV3": {
+              "header": "10% OFF",
+              "subHeader": "ABOVE ₹800",
+              "discountTag": "FLAT DEAL"
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/jose-mess-sg-palya-tavarekere-bangalore-300804",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+      "info": {
+          "id": "121603",
+          "name": "Kannur Food Point",
+          "cloudinaryImageId": "bmwn4n4bn6n1tcpc8x2h",
+          "locality": "SG Palya",
+          "areaName": "Tavarekere",
+          "costForTwo": "₹300 for two",
+          "cuisines": [
+              "Kerala",
+              "Chinese"
+          ],
+          "avgRating": 3.9,
+          "feeDetails": {
+              "restaurantId": "121603",
+              "fees": [
+                  {
+                      "name": "BASE_DISTANCE",
+                      "fee": 6100
+                  },
+                  {
+                      "name": "BASE_TIME"
+                  },
+                  {
+                      "name": "ANCILLARY_SURGE_FEE"
+                  }
+              ],
+              "totalFee": 6100
+          },
+          "parentId": "20974",
+          "avgRatingString": "3.9",
+          "totalRatingsString": "10K+",
+          "sla": {
+              "deliveryTime": 35,
+              "lastMileTravel": 6.7,
+              "serviceability": "SERVICEABLE",
+              "slaString": "35 mins",
+              "lastMileTravelString": "6.7 km",
+              "iconType": "ICON_TYPE_EMPTY"
+          },
+          "availability": {
+              "nextCloseTime": "2023-09-06 02:50:00",
+              "opened": true
+          },
+          "badges": {},
+          "isOpen": true,
+          "aggregatedDiscountInfoV2": {},
+          "type": "F",
+          "badgesV2": {
+              "entityBadges": {
+                  "imageBased": {},
+                  "textBased": {},
+                  "textExtendedBadges": {}
+              }
+          },
+          "orderabilityCommunication": {
+              "title": {},
+              "subTitle": {},
+              "message": {},
+              "customIcon": {}
+          },
+          "differentiatedUi": {
+              "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+              "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+              }
+          },
+          "reviewsSummary": {},
+          "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+          "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+          "context": "seo-data-fd4eff89-d634-4b7a-9f24-b02e9a0cb06f"
+      },
+      "cta": {
+          "link": "https://www.swiggy.com/restaurants/kannur-food-point-sg-palya-tavarekere-bangalore-121603",
+          "text": "RESTAURANT_MENU",
+          "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  }
   ]
 
 // OLD API Data  
